@@ -67,3 +67,10 @@ app.delete("/api/expense/:id",async (req,res)=>{
     const exp = await expenseModel.findOneAndDelete({id});
     res.json(exp);
 });
+
+app.delete("/api/expense",async (req,res)=>{
+    const {id} = req.params; 
+    const exp = await expenseModel.deleteMany({});
+    res.json(exp);
+});
+
