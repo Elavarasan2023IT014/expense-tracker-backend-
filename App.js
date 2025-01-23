@@ -4,7 +4,7 @@ const app  = express()
 app.use(express.json())
 const mongoose = require('mongoose');
 const { v4: uuidv4 } = require('uuid');
-const url = "mongodb+srv://elavarasanr2023it:alwlhTZlbiW6nXQT@cluster0.yzegp.mongodb.net/mern";
+const url = "mongodb+srv://elavarasanr2023it:Elavarasan987@cluster0.eqz5z.mongodb.net/Mern-Expense";
 port = 8001;
 mongoose
     .connect(url)
